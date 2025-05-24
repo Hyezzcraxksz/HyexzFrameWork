@@ -27,7 +27,7 @@ A powerful, modular exploitation and penetration testing framework inspired by M
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/YourFrameworkName.git
-cd YourFrameworkName
+git clone https://github.com/Hyezzcraxksz/HyexzFrameWork.git
+cd HyexzFrameWork
 chmod +x install.sh
 ./install.sh
