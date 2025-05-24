@@ -1,0 +1,70 @@
+# === GENERAL ===
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# === C++ COMPILATION ARTIFACTS ===
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+*.a
+*.lib
+
+# === BUILD FOLDERS ===
+build/
+bin/
+dist/
+debug/
+release/
+
+# === PYTHON ARTIFACTS ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+*.egg-info/
+.eggs/
+
+# === VISUAL STUDIO ===
+.vscode/
+*.vcxproj*
+*.sln
+*.user
+*.opensdf
+*.sdf
+*.db
+*.suo
+*.VC.db
+*.ncb
+ipch/
+*.pdb
+
+# === VERSION CONTROL ===
+.git/
+.gitignore
+
+# === SECRETS & CONFIGS ===
+.env
+*.key
+*.pem
+*.crt
+config.json
+secrets.json
+
+# === OS-SPECIFIC ===
+# macOS
+.AppleDouble
+.LSOverride
+Icon?
+# Windows
+ehthumbs.db
+Desktop.ini
