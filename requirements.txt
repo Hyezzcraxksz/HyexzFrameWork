@@ -26,3 +26,6 @@ subprocess.run; python_version>='3.5'
 # Optional extras
 flask          # For web interface or fake login pages
 pyngrok        # For exposing local servers (like reverse shells)
+
+#Installation
+pip install -r requirements.txt
