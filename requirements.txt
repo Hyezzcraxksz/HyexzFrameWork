@@ -1,0 +1,2 @@
+# requirements.txt
+# Placeholder for hyexz-framework/requirements.txt
