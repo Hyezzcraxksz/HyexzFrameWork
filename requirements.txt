@@ -1,2 +1,28 @@
-# requirements.txt
-# Placeholder for hyexz-framework/requirements.txt
+# Core networking & hacking
+scapy
+requests
+netifaces
+paramiko       # SSH client
+pyftpdlib      # FTP server (e.g., for hosting payloads)
+
+# Payload encoding / cryptography
+cryptography
+pycryptodome
+
+# Terminal UI (if you're building a CLI shell)
+prompt_toolkit
+colorama
+rich
+
+# Web exploitation / automation
+beautifulsoup4
+lxml
+
+# System interaction
+psutil
+pyfiglet
+subprocess.run; python_version>='3.5'
+
+# Optional extras
+flask          # For web interface or fake login pages
+pyngrok        # For exposing local servers (like reverse shells)
