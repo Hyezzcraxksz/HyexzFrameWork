@@ -1,33 +1,29 @@
-from setuptools import setup, find_packages
+# run.py
+import os
+import sys
+from rich import print
+from prompt_toolkit import prompt
+from pyfiglet import figlet_format
 
-setup(
-    name='HyexzFrameWork',
-    version='1.0.0',
-    author='Hyezzcraxksz',
-    description='HyexzFrameWork - A custom modular exploitation framework',
-    packages=find_packages(),
-    install_requires=[
-        'scapy',
-        'requests',
-        'netifaces',
-        'paramiko',
-        'pyftpdlib',
-        'cryptography',
-        'pycryptodome',
-        'prompt_toolkit',
-        'colorama',
-        'rich',
-        'beautifulsoup4',
-        'lxml',
-        'psutil',
-        'pyfiglet',
-        'flask',
-        'pyngrok'
-    ],
-    entry_points={
-        'console_scripts': [
-            'hyexz = run:main',
-        ],
-    },
-    python_requires='>=3.6',
-)
+def main():
+    banner = figlet_format("HyexzFrameWork", font="slant")
+    print(f"[bold green]{banner}[/bold green]")
+    print("[cyan]Welcome to HyexzFrameWork by Hyezzcraxksz[/cyan]")
+
+    try:
+        while True:
+            cmd = prompt("hyexz > ")
+            if cmd in ["exit", "quit"]:
+                print("[red]Exiting...[/red]")
+                break
+            elif cmd.startswith("use "):
+                print(f"[yellow]Module selected: {cmd[4:]}[/yellow]")
+            elif cmd == "help":
+                print("[blue]Available commands: use, help, exit[/blue]")
+            else:
+                print(f"[red]Unknown command:[/red] {cmd}")
+    except KeyboardInterrupt:
+        print("\n[red]Interrupted by user.[/red]")
+
+if __name__ == "__main__":
+    main()
